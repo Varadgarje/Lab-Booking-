@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #f0f4f8, #dbeafe);
+}
+
+.navbar {
+  background: #1e3a8a;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin-left: 3rem;
+}
+
+.navbar h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.booking-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+.booking-banner {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.booking-form {
+  background: #ffffff;
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 1000px;
+  font-size: 1.2rem;
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.75rem;
+  background: #e0ffe0;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #a3e6a3;
+}
+
+.form-and-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.booking-form button {
+  cursor: pointer;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.booking-form button[type='button'] {
+  background: #c0392b;
+}
+
+.booking-form .error {
+  color: #c0392b;
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lab-preview-side {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.lab-preview-side img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .booking-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-form {
+    width: 90%;
+  }
+
+  .form-and-preview {
+    flex-direction: column;
+  }
+}
